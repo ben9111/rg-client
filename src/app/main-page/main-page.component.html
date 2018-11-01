@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <h1>Main Page</h1>
+
+  <ul *ngFor='let item of countries'>
+    <li>
+      {{item.Country}}
+    </li>
+    <ul>
+      <li *ngFor='let city of item.City'>
+        <a href="http://localhost:4200/city/{{city.Id}}">{{city.City}}</a>
+      </li>
+    </ul>
+  </ul>
+
+</div>
